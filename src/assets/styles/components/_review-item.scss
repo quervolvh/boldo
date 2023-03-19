@@ -1,0 +1,44 @@
+.review-item {
+
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12);
+    border-radius: 12px;
+    height: max-content;
+    background: color(white);
+
+    p {
+
+        @include font-size(l-large);
+        line-height: 36px;
+
+    }
+
+    &-flex {
+
+        display: flex;
+        margin-top: 40px;
+
+        img {
+
+            margin-right: 16px;
+            width: 58px;
+            height: 58px;
+
+        }
+
+        h2 {
+
+            @include font-size(regular);
+            margin-bottom: 6px;
+            font-weight: 700;
+
+        }
+
+        small {
+
+            @include font-size(small);
+
+        }
+
+    }
+
+}

@@ -1,0 +1,95 @@
+.all-the-way- {
+  animation: all-the-way;
+  animation-duration: 12s;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+}
+
+@keyframes all-the-way {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  25% {
+    bottom: -9px;
+    margin-left: 15%;
+    height: 83.5%;
+    transform: rotate(30deg);
+  }
+
+  50% {
+    bottom: -9px;
+    margin-left: 15%;
+    height: 83.5%;
+    transform: rotate(30deg);
+  }
+
+  75% {
+    bottom: -9px;
+    margin-left: 15%;
+    height: 83.5%;
+    transform: rotate(30deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.all-the-way-float {
+  animation: all-the-way-we-float;
+  animation-duration: 8s;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+}
+
+@keyframes all-the-way-we-float {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  50% {
+    transform: translate(0, -10px);
+  }
+
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+.lets-animate {
+
+  opacity: 0;
+  transform: translate(0, 100px);
+  transition: 2s ease;
+
+}
+
+.lets-animate-opacity {
+
+  opacity: 0.5;
+  transform: translate(0, 10px);
+  transition: 1s ease;
+
+}
+
+.lets-max-animate-opacity {
+
+  opacity: 0;
+  transform: translate(0, 10px);
+  transition: 3s ease;
+
+}
+
+.opacity-secured {
+
+  opacity: 1;
+
+}
+
+.transition-reveal {
+
+  opacity: 1;
+  transform: translate(0, 0);
+
+}

@@ -1,0 +1,120 @@
+.section-seven {
+
+    @extend  %body-width-and-padding;
+    color: color(white);
+
+    &-body {
+
+        @extend  %body-width-and-padding;
+        z-index: 0;
+        position: relative;
+        margin: auto;
+        border-radius: 12px;
+        padding-top: 72px;
+        padding-bottom: 72px;
+        width: 100%;
+        max-width: 1200px;
+        overflow: hidden;
+        background: color(primary);
+
+        &-ellipse {
+
+            @include media-query(tablet) {
+                right: -650px !important;
+
+            }
+
+            top: -950px !important;
+            right: -550px !important;
+            width: 1200px;
+            height: 1200px;
+            background: #1C3D5B;
+
+        }
+
+        h1 {
+
+            @include media-query(mobile) {
+
+               @include font-size-override(x-large);
+
+            }
+
+            margin-bottom: 50px;
+            text-align: center;
+            font-weight: 400;
+
+        }
+
+        input {
+
+            @include font-size(p-large);
+            border-radius: 50px;
+            padding: 12px 32px !important;
+            text-align: center;
+
+        }
+
+        input::placeholder {
+
+            @include font-size(p-large);
+            color: color(dark);
+
+        }
+
+    }
+
+    &-content {
+
+        margin: auto;
+        max-width: 712px;
+
+    }
+
+    &-input {
+
+        @include media-query(mobile) {
+
+            flex-direction: column;
+
+        }
+
+        display: flex;
+        justify-content: center;
+
+        .form-field {
+
+            @include media-query(mobile) {
+
+                margin-bottom: 20px;
+                max-width: unset;
+
+            }
+
+            margin-right: 24px;
+            margin-bottom: 0;
+            width: 100%;
+            max-width: 370px;
+
+        }
+
+        .button {
+
+            @include media-query(mobile) {
+
+                padding: 19px 56px !important;
+                padding-left: 30px !important;
+                width: 100%;
+                max-width: 100%;
+
+            }
+
+            padding: 12px 56px !important;
+            width: max-content;
+            background: color(green);
+
+        }
+
+    }
+
+}
